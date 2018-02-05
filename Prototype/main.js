@@ -1,10 +1,12 @@
 
 
+var attendanceClerk = "https://rise.articulate.com/share/7mJfnNg6QTpuCMW3WY6VG0gZ8nWXOWNy#/?_k=nzjbwz";
+
 // Get the modal
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("link");
+var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];

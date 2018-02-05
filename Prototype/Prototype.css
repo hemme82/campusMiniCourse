@@ -7,11 +7,25 @@ body {
 /*        margin: 0 auto;*/
 /*        max-width: 56em;*/
         padding: 20px;
-        background: var(--white); ; 
+        background: var(--white);  
 }
 a{
-    color: black;
+    color: black ;
+    
+    
 }
+a:visited {
+    color: #c4dbed ;
+    
+}
+a:hover{
+    color: #808080; 
+    
+}
+a:active{
+    color: #bf4d1e;
+}
+
 
 .grid {
     display: grid;
@@ -26,6 +40,10 @@ a{
 /*    background: rgba(255, 255, 255, 0.2);*/
     font-family: 'Roboto', sans-serif;
     border-radius: 3px;
+    text-transform: uppercase;
+    
+    
+    
 /*
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -47,6 +65,13 @@ a{
     
 }
 
+.module1:hover{
+    color: black;
+    
+}
+
+
+
 
 /* The Modal (background) */
 .modal {
@@ -67,10 +92,10 @@ a{
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    margin: 3% auto; /* 15% from the top and centered */
+    padding: 10px;
     border: 1px solid #888;
-    width: 90%; /* Could be more or less, depending on screen size */
+    width: 95%; /* Could be more or less, depending on screen size */
     height: 100%;
 }
 
@@ -83,10 +108,40 @@ a{
 }
 
 .close:hover,
+
 .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#myBtn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+/*   background-color: #fcad26; */
+  background: var(--white); 
+  font-size: 16px;
+  font-weight: px;
+  color: #252525;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 25px 25px;
+  margin:0 auto;
+  border-radius: 5px;
+  box-shadow: 0 6px #e1e1e1 ;
+  }
+
+#myBtn:hover{
+  box-shadow: 0 4px #e1e1e1 ;
+  top: 2px;
+}
+
+#myBtn:active {
+  box-shadow: none;
+  top: 6px;
 }
 
         
