@@ -29,7 +29,8 @@ a:active{
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/*    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));*/
     grid-gap: 25px;
     align-items: center;
     
@@ -37,34 +38,37 @@ a:active{
 /*These are the panels*/
 .module {
     /* Demo-Specific Styles */
-    background: var(--campusGreen);
+    background: #A9C9A4;
 /*    background: rgba(255, 255, 255, 0.2);*/
     font-family: 'Roboto', sans-serif;
-    border-radius: 3px;
+    border-radius: 10px;
     text-transform: uppercase;
     box-shadow: 5px 5px 3px grey;
-    
-    
-/*
     display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-gap: 10px;
-    
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-*/
+/*    grid-template-columns: repeat(auto-fi, minmax(150px, 1fr));*/
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 0px;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 5px 5px 2px 2 grey;
+    padding-bottom: 20px;
 /*    This turns each panel into a flexbox with content aligning vertically.*/
+/*
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 200px;
+*/
+}
+.picture {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .module1{
     grid-column: 1/-1;
     height: 100px;
-    background: var(--campusGreen);
-    
 }
 
 .module:hover{
@@ -72,8 +76,10 @@ a:active{
     top: 20px;
 }
 .module:active{
+/*
     box-shadow: 2px 2px .5px grey;
     top: 15px;
+*/
 }
 .module1:hover{
     opacity: 1;
