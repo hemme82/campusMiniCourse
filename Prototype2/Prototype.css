@@ -1,0 +1,224 @@
+ 
+:root{
+    --white: #efefef;
+    --campusGreen: #92c83e; 
+}
+body {
+        margin: 0;
+/*        max-width: 56em;*/
+        padding: 20px;
+        background: var(--white);  
+}
+
+a{
+    color: black;
+    
+    
+}
+a:visited {
+    color: #ababab;
+    
+}
+a:hover{
+    color: #808080; 
+    
+}
+a:active{
+    color: #bf4d1e;
+}
+
+.banner{
+    display: grid;
+     grid-column: 1/-1;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+/*    height: 75px;*/
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background: #75AD1f ;
+    border-radius: 0px;
+    box-shadow: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    grid-gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/*    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));*/
+    grid-gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+/*These are the panels*/
+.module {
+    /* Demo-Specific Styles */
+    background: #CCF192;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 3px grey;
+    display: grid;
+/*    grid-template-columns: repeat(auto-fi, minmax(150px, 1fr));*/
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 0px;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 5px 5px 2px 2 grey;
+    padding-bottom: 20px;
+    
+/*    This turns each panel into a flexbox with content aligning vertically.*/
+/*
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+*/
+}
+.picture {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.module1{
+    grid-column: 1/-1;
+    height: 75px;
+    align-items: center;
+    background: #75AD1f ;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.module:hover{
+    opacity: .9;
+/*    top: 20px;*/
+    background: #92C83E;
+}
+.module:active{
+/*
+    box-shadow: 2px 2px .5px grey;
+    top: 15px;
+*/
+}
+.module1:hover{
+    opacity: 1;
+    background: #75AD1f;
+   
+}
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 3% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 95%; /* Could be more or less, depending on screen size */
+    height: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+/*   background-color: #fcad26; */
+  background: var(--white); 
+  font-size: 16px;
+  font-weight: px;
+  color: #252525;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 25px 25px;
+  margin:0 auto;
+  border-radius: 5px;
+  box-shadow: 0 6px #e1e1e1 ;
+  }
+
+#myBtn:hover{
+  box-shadow: 0 4px #e1e1e1 ;
+  top: 2px;
+}
+
+#myBtn:active {
+  box-shadow: none;
+  top: 6px;
+}
+
+        
+      
+      
+/*
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .album {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-gap: 10px;
+      align-items: center;
+      color: white;
+      font-weight: 100;
+    }
+
+    .album__artwork {
+      width: 100%;
+    }
+*/
